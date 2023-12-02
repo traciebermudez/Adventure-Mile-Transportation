@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Apply Now</title>
+
+    <meta charset="utf-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link href="applynow.css" rel="stylesheet" />
+    <script src="applynow.js"></script>
+    <script
+      src="https://kit.fontawesome.com/057c544a6d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="index.html">
+          <img src="navlogo.png" alt="tire with wings logo" class="navlogo" />
+        </a>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="ourlocations.html">OUR LOCATIONS</a></li>
+            <li><a href="contactus.html">CONTACT US</a></li>
+            <li><a href="applynow.html">APPLY NOW</a></li>
+            <li><a href="driverportal.html">DRIVER PORTAL</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <br />
+
+    <div class="text-block">
+      <p>JOIN OUR TEAM</p>
+    </div>
+    <aside class="aside">
+      <p>
+        Complete the registration form and<br />
+        one of our recruiters will reach out to you<br />
+        promptly. When contacted by a recruiter,<br />
+        you can expect a discussion about your qualifications,<br />
+        and you will be guided through the next steps in<br />
+        the application process. Our recruiters are dedicated<br />
+        to guiding you through a smooth and efficient <br />
+        experience as you pursue opportunities with Adventure Mile.<br />
+        Your journey to becoming a part of our team starts here.
+      </p>
+
+      <article id="video-article">
+        <video id="applyNowVideo" autoplay loop muted>
+          <source
+            src="applynowlogo.mp4"
+            alt="we're hiring cdl-a drivers"
+            type="video/mp4"
+          />
+        </video>
+
+        <script src="applynow.js"></script>
+      </article>
+    </aside>
+
+    <div class="registration-form-container">
+      <form name="Form" onsubmit="return validateForm()">
+        <h2>Registration Form</h2>
+        <div class="box">
+          <label>Full Name</label>
+          <input type="text" name="name" id="name" />
+          <div class="error" id="nameError"></div>
+        </div>
+
+        <div class="box">
+          <label>Email Address</label>
+          <input type="text" name="email" id="email" />
+          <div class="error" id="emailError"></div>
+        </div>
+
+        <div class="box">
+          <label>Phone Number</label>
+          <input type="text" name="mobile" id="mobile" />
+          <div class="error" id="mobileError"></div>
+        </div>
+
+        <div class="box">
+          <label>State</label>
+          <select name="state" id="state">
+            <option>Alabama</option>
+            <option>Alaska</option>
+            <option>Arizona</option>
+            <option>Arkansas</option>
+            <option>California</option>
+            <option>Colorado</option>
+            <option>Connecticut</option>
+            <option>Delaware</option>
+            <option>Florida</option>
+            <option>Georgia</option>
+            <option>Hawaii</option>
+            <option>Idaho</option>
+            <option>Illinois</option>
+            <option>Indiana</option>
+            <option>Iowa</option>
+            <option>Kansas</option>
+            <option>Kentucky</option>
+            <option>Louisiana</option>
+            <option>Maine</option>
+            <option>Maryland</option>
+            <option>Massachusetts</option>
+            <option>Michigan</option>
+            <option>Minnesota</option>
+            <option>Mississippi</option>
+            <option>Missouri</option>
+            <option>Montana</option>
+            <option>Nebraska</option>
+            <option>Nevada</option>
+            <option>New Hampshire</option>
+            <option>New Jersey</option>
+            <option>New Mexico</option>
+            <option>New York</option>
+            <option>North Carolina</option>
+            <option>North Dakota</option>
+            <option>Ohio</option>
+            <option>Oklahoma</option>
+            <option>Oregon</option>
+            <option>Pennsylvania</option>
+            <option>Rhode Island</option>
+            <option>South Carolina</option>
+            <option>South Dakota</option>
+            <option>Tennessee</option>
+            <option>Texas</option>
+            <option>Utah</option>
+            <option>Vermont</option>
+            <option>Virginia</option>
+            <option>Washington</option>
+            <option>West Virginia</option>
+            <option>Wisconsin</option>
+            <option>Wyoming</option>
+          </select>
+          <div class="error" id="stateError"></div>
+        </div>
+        <br />
+        <div class="box">
+          <label>Do you have a CDL-A?</label>
+          <div class="form-inline" id="cdl">
+            <label><input type="radio" name="cdl" value="Yes" />Yes</label>
+            <label><input type="radio" name="cdl" value="No" />No</label>
+          </div>
+          <div class="error" id="cdlError"></div>
+        </div>
+        <div class="box">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <div class="col-1">
+          <h3>TERMINALS</h3>
+          <p>Hyrule City, LA</p>
+          <p>Kokiri Forest, CO</p>
+          <p>Goron City, UT</p>
+        </div>
+        <div class="col-2">
+          <h3>NEWSLETTER</h3>
+          <form>
+            <input type="email" placeholder="Your Email Address" required />
+            <br />
+            <button type="submit">SUBSCRIBE NOW</button>
+          </form>
+        </div>
+        <div class="col-3">
+          <h3>CONTACT</h3>
+          <p>
+            <i class="fa-solid fa-phone"></i> 800-222-2222<br /><br />
+            <i class="fa-solid fa-city"></i> 0918 Wind Waker Lane, 41219<br />
+            Hyrule City, LA <br /><br />
+            <i class="fa-solid fa-envelope"></i> AdventureMile@mythicmail.com
+          </p>
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+          <p class="copyright">
+            &copy; 2023 Adventure Mile Transportation LLC. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

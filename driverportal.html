@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Driver Portal</title>
+
+    <meta charset="utf-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link href="driverportal.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/057c544a6d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="index.html">
+          <img src="navlogo.png" alt="tire with wings logo" class="navlogo" />
+        </a>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="ourlocations.html">OUR LOCATIONS</a></li>
+            <li><a href="contactus.html">CONTACT US</a></li>
+            <li><a href="applynow.html">APPLY NOW</a></li>
+            <li><a href="driverportal.html">DRIVER PORTAL</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <h1>DRIVER PORTAL</h1>
+    <p class="intro-paragraph">
+      The driver portal is an exclusive online hub solely accessible to
+      current<br />
+      employees who are drivers within company. It's their one-stop platform<br />
+      for scheduling assigned routes and delivery tasks, enabling direct<br />
+      communication with dispatchers or managers. It streamlines
+      documentation<br />
+      and reporting, allowing access to invoices and essential records.<br />
+      Moreover, it facilitates vehicle maintenance tracking, ensuring the
+      fleet<br />
+      remains in optimal condition. This centralized tool empowers drivers,<br />
+      providing them with necessary resources to manage tasks efficiently
+      while<br />
+      maintaining secure, internal communication channels.
+    </p>
+
+    <article>
+      <img src="driverportal.png" alt="truck drivers" />
+    </article>
+
+    <div class="wrapper">
+      <label>Driver Login</label>
+      <form action="#">
+        <div class="field email">
+          <div class="input-area">
+            <input type="text" placeholder="Email Address" />
+            <i class="icon fa-solid fa-envelope"></i>
+            <i
+              class="error error-icon fa-solid fa-circle-exclamation"
+              style="color: #ff0000"
+            ></i>
+          </div>
+          <div class="error error-txt">Email can't be blank</div>
+        </div>
+        <div class="field password">
+          <div class="input-area">
+            <input type="text" placeholder="Password" />
+            <i class="icon fa-solid fa-lock"></i>
+            <i
+              class="error error-icon fa-solid fa-circle-exclamation"
+              style="color: #ff0000"
+            ></i>
+          </div>
+          <div class="error error-txt">Password can't be blank</div>
+        </div>
+        <div class="pass-link"><a href="#">Forgot Password?</a></div>
+        <input type="submit" value="Login" />
+      </form>
+    </div>
+
+    <script src="driverportal.js"></script>
+
+    <footer>
+      <div class="footer">
+        <div class="col-1">
+          <h3>TERMINALS</h3>
+          <p>Hyrule City, LA</p>
+          <p>Kokiri Forest, CO</p>
+          <p>Goron City, UT</p>
+        </div>
+        <div class="col-2">
+          <h3>NEWSLETTER</h3>
+          <form>
+            <input type="email" placeholder="Your Email Address" required />
+            <br />
+            <button type="submit">SUBSCRIBE NOW</button>
+          </form>
+        </div>
+        <div class="col-3">
+          <h3>CONTACT</h3>
+          <p>
+            <i class="fa-solid fa-phone"></i> 800-222-2222<br /><br />
+            <i class="fa-solid fa-city"></i> 0918 Wind Waker Lane, 41219<br />
+            Hyrule City, LA <br /><br />
+            <i class="fa-solid fa-envelope"></i> AdventureMile@mythicmail.com
+          </p>
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+          <p class="copyright">
+            &copy; 2023 Adventure Mile Transportation LLC. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

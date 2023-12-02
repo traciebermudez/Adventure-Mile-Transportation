@@ -1,0 +1,254 @@
+/* Navigation bar */
+
+body {
+  margin: 0;
+  background: #ffffff;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  margin-left: 30px; 
+}
+
+header {
+  background: #333;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.navlogo {
+  width: 10%;
+  height: 10%;
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 40px;
+  margin-right: -5px;
+  padding-top: 30px;
+  position: relative;
+}
+
+nav a {
+  color: #efefef;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #d4d3d3;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: #575454;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+/* Adventure Mile logo header */
+
+body, header {
+  margin: 0;
+  padding: 0;
+}
+
+.logo-container {
+  text-align: center; 
+}
+
+.header-logo {
+  width: 100%;
+}
+
+/* Welcome Paragraph */
+
+.welcome-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 80px;
+  padding: 40px 5%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ece2d1;
+  border-left: 2px solid white; 
+}
+
+.welcome-container {
+  flex-basis: calc(50% - 2px); 
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome-container:nth-child(odd) {
+  border-right: 2px solid white; 
+}
+
+.content-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-info {
+  flex-basis: 60%;
+}
+
+.welcome-container h2 {
+  margin-bottom: 10px;
+  color: black; 
+}
+
+.welcome-container p {
+  margin-bottom: 0; 
+  color: #4e4e4e;
+}
+
+.welcome-1 {
+  text-align: center;
+  font-size: 22px;
+  background-color: #dec183;;
+  margin-top: -20px;
+  padding-top: 39px;
+  padding-bottom: 24px;
+  color: #323232;
+  line-height: 26px;
+  letter-spacing: 1.2px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.truck1, .truck2, .truck3, .worker1 {
+  border-radius: 80%;
+  width: 180px;
+  height: 160px;
+  margin-bottom: 10px;
+  margin-right: 20px; 
+  padding-top: 10px;
+}
+
+.fleet-content {
+  order: 1;
+}
+
+.fleet-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hauling-content {
+  order: 2;
+}
+
+.hauling-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Footer */
+
+.footer {
+  margin-top: 150px;
+  width: 70%;
+  padding: 100px 15%;
+  background: #333;
+  color: #efefef;
+  display: flex;
+}
+
+.footer div {
+  text-align: center;
+}
+
+.col-2 {
+  flex-grow: 2;
+  margin-left: 50px;
+}
+
+.footer div h3 {
+  font-weight: 300;
+  letter-spacing: 1px;
+
+}
+
+.col-1 p{
+  display: block;
+  color: #efefef;
+  margin-bottom: 10px;
+}
+
+form input {
+  width: 400px;
+  height: 45px;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  outline: none;
+  border: none;
+}
+
+form button {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.social-icons {
+  margin-top: 30px;
+}
+
+.social-icons i {
+  font-size: 22px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.footer {
+  position: relative;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 10px; 
+  left: 0;
+  right: 0;
+  text-align: left;
+}
+
